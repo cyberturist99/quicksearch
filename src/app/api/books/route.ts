@@ -20,10 +20,7 @@ export async function GET(request: NextRequest) {
 
 		const filteredBooks = books.filter((book) => {
 			const searchQuery = query.toLowerCase();
-			return (
-				book.title.toLowerCase().includes(searchQuery) ||
-				book.author.toLowerCase().includes(searchQuery)
-			);
+			return book.title.toLowerCase().includes(searchQuery);
 		});
 
 		return new Response(JSON.stringify(filteredBooks), {

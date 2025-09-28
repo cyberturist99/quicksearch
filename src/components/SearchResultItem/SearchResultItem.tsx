@@ -1,17 +1,15 @@
 import styles from "./SearchResultItem.module.css";
+import { IBook } from "@/types/book";
 
 interface SearchResultItemProps {
-	author: string;
-	book: string;
+	book: IBook;
 }
-export default function SearchResultItem({
-	author,
-	book,
-}: SearchResultItemProps) {
+
+export default function SearchResultItem({ book }: SearchResultItemProps) {
 	return (
 		<li className={styles.bookCard}>
-			<div className={styles.author}>Автор: {author}</div>
-			<div className={styles.book}>Книга: {book}</div>
+			<div className={styles.author}>Автор: {book.author}</div>
+			<div className={styles.book}>Книга: {book.title}</div>
 		</li>
 	);
 }
