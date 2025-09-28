@@ -1,3 +1,4 @@
+"use client";
 import SearchResultItem from "../SearchResultItem/SearchResultItem";
 import styles from "./SearchInput.module.css";
 export default function SearchInput() {
