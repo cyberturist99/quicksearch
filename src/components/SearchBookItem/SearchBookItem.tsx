@@ -1,4 +1,4 @@
-import styles from "./SearchResultItem.module.css";
+import styles from "./SearchBookItem.module.css";
 import { IBook } from "@/types/book";
 
 interface SearchResultItemProps {

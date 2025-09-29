@@ -1,11 +1,11 @@
 import { Suspense } from "react";
-import SearchInput from "@/components/SearchInput/SearchInput";
+import BookList from "@/components/BookList/BookList";
 
 export default function Home() {
 	return (
 		<div>
 			<Suspense fallback={<div>Загрузка...</div>}>
-				<SearchInput />
+				<BookList />
 			</Suspense>
 		</div>
 	);
